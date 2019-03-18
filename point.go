@@ -85,5 +85,5 @@ func (np NullPoint) Value() (driver.Value, error) {
 	if !np.Valid {
 		return nil, nil
 	}
-	return np.Point, nil
+	return np.Point.Value(), nil
 }
